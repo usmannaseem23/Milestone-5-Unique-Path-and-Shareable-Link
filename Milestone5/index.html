@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Unique Path and Shareable Link Resume By Usman Naseem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="resumeForm">
+        <h1>Unique Path and Shareable Link Resume By Usman Naseem</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">UserName URL:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your User Name" required><br>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required><br>
+            
+           
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required><br>
+
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter Your Address" required><br>
+
+
+           
+
+            <!-- Profile Picture Upload -->
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*"><br>
+        </fieldset>
+
+        <fieldset>
+         
+            <legend>Education</legend>
+            <label for="education">Education (Use Comma (,))</label>
+            <textarea name="education" rows="4" placeholder="Enter Your Education eg Matric , Intermediate" required id="education"></textarea><br>
+
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Enter Your Experience"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label for="skills">Skills (Use Comma (,)):</label>
+            <textarea id="skills" name="skills" rows="3" placeholder="Enter Your Skills"></textarea><br>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+    <br>
+
+    <div id="resumeOutput"></div>
+       
+    <!-- Sharing and PDF download section -->
+    <div id="actions" style="display:none;">
+        <button id="downloadPdf">Download PDF</button>
+       <div> <input type="text" id="shareLink" readonly>
+        <button id="copyLink">Copy Link</button></div> 
+    </div> 
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
